@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import PageNav from "@/components/PageNav";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function Introduction() {
   return (
