@@ -4,6 +4,7 @@ import ComponentPreview from "@/components/ComponentPreview";
 import CodeBlock from "@/components/CodeBlock";
 import ApiTable from "@/components/ApiTable";
 import PageNav from "@/components/PageNav";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const sections = [
   { id: "overview", label: "Overview" },
