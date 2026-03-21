@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Zap, Accessibility, Paintbrush, ArrowRight } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const features = [
   {
