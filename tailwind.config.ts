@@ -108,6 +108,7 @@ export default {
         "fade-in": "fade-in 0.4s ease-out forwards",
         "slide-in-left": "slide-in-left 0.25s ease-out",
         "slide-out-left": "slide-out-left 0.2s ease-in",
+        "orb-pulse": "orb-pulse 6s ease-in-out infinite",
       },
     },
   },
