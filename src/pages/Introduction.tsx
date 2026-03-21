@@ -3,6 +3,7 @@ import PageNav from "@/components/PageNav";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function Introduction() {
+  usePageTitle("Introduction");
   return (
     <div className="px-6 md:px-10 py-8 max-w-4xl">
       <Breadcrumb items={[{ label: "Getting Started", path: "/" }, { label: "Introduction" }]} />

@@ -61,6 +61,7 @@ function DemoInput({ label, placeholder, error, disabled }: { label?: string; pl
 }
 
 export default function InputDocs() {
+  usePageTitle("Input");
   return (
     <div className="flex">
       <div className="flex-1 min-w-0 px-6 md:px-10 py-8 max-w-4xl">

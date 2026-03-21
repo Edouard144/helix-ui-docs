@@ -37,6 +37,7 @@ const apiProps = [
 ];
 
 export default function CardDocs() {
+  usePageTitle("Card");
   return (
     <div className="flex">
       <div className="flex-1 min-w-0 px-6 md:px-10 py-8 max-w-4xl">

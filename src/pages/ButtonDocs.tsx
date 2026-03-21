@@ -34,6 +34,7 @@ const apiProps = [
 ];
 
 export default function ButtonDocs() {
+  usePageTitle("Button");
   return (
     <div className="flex">
       <div className="flex-1 min-w-0 px-6 md:px-10 py-8 max-w-4xl">
