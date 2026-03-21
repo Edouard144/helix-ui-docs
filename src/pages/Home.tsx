@@ -69,6 +69,7 @@ function useScrollReveal() {
 }
 
 export default function Home() {
+  usePageTitle();
   const featuresRef = useScrollReveal();
   const componentsRef = useScrollReveal();
 
