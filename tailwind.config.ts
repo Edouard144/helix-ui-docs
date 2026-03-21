@@ -96,6 +96,10 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        "orb-pulse": {
+          "0%, 100%": { opacity: "0.2", transform: "scale(1)" },
+          "50%": { opacity: "0.35", transform: "scale(1.05)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -104,6 +108,7 @@ export default {
         "fade-in": "fade-in 0.4s ease-out forwards",
         "slide-in-left": "slide-in-left 0.25s ease-out",
         "slide-out-left": "slide-out-left 0.2s ease-in",
+        "orb-pulse": "orb-pulse 6s ease-in-out infinite",
       },
     },
   },

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Zap, Accessibility, Paintbrush, ArrowRight } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const features = [
   {
@@ -68,6 +69,7 @@ function useScrollReveal() {
 }
 
 export default function Home() {
+  usePageTitle();
   const featuresRef = useScrollReveal();
   const componentsRef = useScrollReveal();
 
@@ -75,9 +77,9 @@ export default function Home() {
     <div className="w-full">
       {/* Hero */}
       <section className="relative overflow-hidden px-4 py-24 md:py-32 lg:py-40">
-        {/* Gradient orbs */}
-        <div className="pointer-events-none absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-primary/20 blur-[120px]" />
-        <div className="pointer-events-none absolute bottom-[-20%] right-[-10%] h-[500px] w-[500px] rounded-full bg-accent/20 blur-[120px]" />
+        {/* Animated gradient orbs */}
+        <div className="pointer-events-none absolute top-[-20%] left-[-10%] h-[500px] w-[500px] rounded-full bg-primary/20 blur-[120px] animate-orb-pulse" />
+        <div className="pointer-events-none absolute bottom-[-20%] right-[-10%] h-[500px] w-[500px] rounded-full bg-accent/20 blur-[120px] animate-orb-pulse [animation-delay:3s]" />
 
         <div className="relative mx-auto max-w-3xl text-center">
           <div
